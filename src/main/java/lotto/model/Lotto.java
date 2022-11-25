@@ -1,8 +1,6 @@
 package lotto.model;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Lotto {
     private final List<Integer> numbers;
@@ -23,5 +21,9 @@ public class Lotto {
         }
     }
 
-    // TODO: 추가 기능 구현
+    public String numbersToString() {
+        List<Integer> sortNumbers = new ArrayList<>(numbers);
+        Collections.sort(sortNumbers);
+        return sortNumbers.toString();
+    }
 }
