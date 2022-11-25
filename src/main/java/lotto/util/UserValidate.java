@@ -2,13 +2,13 @@ package lotto.util;
 
 public class UserValidate {
     public int buyNumberException(String inputMoney) {
+        int money = 0;
         try {
-            int money = Integer.parseInt(inputMoney);
-            return money;
+            money = Integer.parseInt(inputMoney);
         } catch (NumberFormatException e) {
             System.out.println("[ERROR] 숫자만 입력해주세요.");
-            throw new IllegalArgumentException();
         }
+        return money;
     }
 
     public void moneyRangeException(int money) {

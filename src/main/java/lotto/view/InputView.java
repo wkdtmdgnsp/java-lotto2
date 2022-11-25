@@ -9,15 +9,11 @@ public class InputView {
     private UserValidate userValidate = new UserValidate();
 
     public int readLottoBuy() {
-        try {
-            System.out.println("구입금액을 입력해 주세요.");
-            String inputMoney = Console.readLine();
-            int money = userValidate.buyNumberException(inputMoney);
-            userValidate.moneyRangeException(money);
-            return money;
-        } catch (IllegalArgumentException e) {
-            throw new IllegalArgumentException();
-        }
+        System.out.println("구입금액을 입력해 주세요.");
+        String inputMoney = Console.readLine();
+        int money = userValidate.buyNumberException(inputMoney);
+        userValidate.moneyRangeException(money);
+        return money;
     }
 
     public List<Integer> readWinningLotto() {
