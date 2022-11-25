@@ -1,7 +1,8 @@
 #로또 게임
 
 ##기능 목록
-- [ ] 랜덤 로또 번호 생성 기능 -RandomLotto#randomLotto()
+- [x] 랜덤 로또 번호 생성 기능 -RandomLotto#randomLotto()
+- [ ] 로또 구입 기능 -User#lottoBuy()
 - [ ] 구입 금액 입력 기능 -InputView#readLottoBuy()
 - [ ] 구입한 로또 번호 출력 기능 -OutputView#printLotto()
 - [ ] 당첨 번호 입력 기능 -InputView#readWinningLotto()
