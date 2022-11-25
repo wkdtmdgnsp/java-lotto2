@@ -3,15 +3,15 @@
 ##기능 목록
 - [x] 랜덤 로또 번호 생성 기능 -RandomLotto#randomLotto()
 - [ ] 로또 구입 기능 -User#lottoBuy()
-  - [ ] 구입 금액 입력 기능 -InputView#readLottoBuy()
+  - [x] 구입 금액 입력 기능 -InputView#readLottoBuy()
 - [ ] 구입한 로또 번호 출력 기능 -OutputView#printLotto()
 - [ ] 당첨 번호 입력 기능 -InputView#readWinningLotto()
   - [ ] 보너스 번호 입력 기능 -InputView#readBonusNum()
 - [ ] 당첨 통계 출력 기능 -OutputView#printWinning()
   - [ ] 수익률 출력 기능 -OutputView#printRate()
 - [x] 구입 금액 예외 처리 기능
-  - [x] 숫자가 아닌 경우 예외 처리 기능
-  - [x] 1000원 단위가 아닌 경우 예외 처리 기능
+  - [x] 숫자가 아닌 경우 예외 처리 기능 -UserValidate#buyNumberException()
+  - [x] 1000원 단위가 아닌 경우 예외 처리 기능 -UserValidate#moneyRangeException()
 - [ ] 당첨 번호 예외 처리 기능 
   - [ ] 올바른 형식이 아닌 경우 예외 처리 기능
   - [ ] 중복 번호 예외 처리 기능
