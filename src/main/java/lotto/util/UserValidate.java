@@ -10,4 +10,11 @@ public class UserValidate {
             throw new IllegalArgumentException();
         }
     }
+
+    public void moneyRangeException(int money) {
+        if (money % 1000 != 0) {
+            System.out.println("[ERROR] 1000 단위로 입력해주세요.");
+            throw new IllegalArgumentException();
+        }
+    }
 }
