@@ -17,7 +17,11 @@ public class InputView {
     }
 
     public List<Integer> readWinningLotto() {
-        return null;
+        System.out.println("당첨 번호를 입력해 주세요.");
+        String winningLotto = Console.readLine();
+        List<Integer> winningNumber = userValidate.winningNumberException(winningLotto);
+        userValidate.winningRangeException(winningNumber);
+        return winningNumber;
     }
 
     public int readBonusNum() {

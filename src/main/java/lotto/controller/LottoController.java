@@ -12,10 +12,12 @@ public class LottoController {
     private InputView inputView = new InputView();
     private OutputView outputView = new OutputView();
     private List<Lotto> userLotto = new ArrayList<>();
+    private Lotto winningLotto;
 
     public void run() {
         buy();
         outputView.printLotto(userLotto);
+        winningLotto = new Lotto(inputView.readWinningLotto());
     }
 
     public void buy() {
