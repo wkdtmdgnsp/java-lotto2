@@ -17,13 +17,18 @@ public class LottoController {
     public void run() {
         buy();
         outputView.printLotto(userLotto);
-        winningLotto = new Lotto(inputView.readWinningLotto());
-        int bonusNum = 0;
+        winningInput();
     }
 
     public void buy() {
         int money = inputView.readLottoBuy();
         User user = new User();
         userLotto = user.lottoBuy(money);
+    }
+
+    public void winningInput() {
+        List<Integer> winningNumber = inputView.readWinningLotto();
+        winningLotto = new Lotto(winningNumber);
+        int bonusNum = inputView.readBonusNum(winningNumber);
     }
 }

@@ -24,7 +24,11 @@ public class InputView {
         return winningNumber;
     }
 
-    public int readBonusNum() {
-        return 0;
+    public int readBonusNum(List<Integer> winningNumber) {
+        System.out.println("보너스 번호를 입력해 주세요.");
+        String bonusNum = Console.readLine();
+        int bonusNumber = userValidate.bonusNumberException(bonusNum);
+        userValidate.bonusNumOverlapException(bonusNumber, winningNumber);
+        return bonusNumber;
     }
 }

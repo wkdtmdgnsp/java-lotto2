@@ -6,7 +6,7 @@
   - [x] 구입 금액 입력 기능 -InputView#readLottoBuy()
 - [x] 구입한 로또 번호 출력 기능 -OutputView#printLotto()
 - [x] 당첨 번호 입력 기능 -InputView#readWinningLotto()
-  - [ ] 보너스 번호 입력 기능 -InputView#readBonusNum()
+  - [x] 보너스 번호 입력 기능 -InputView#readBonusNum()
 - [ ] 당첨 통계 출력 기능 -OutputView#printWinning()
   - [ ] 수익률 출력 기능 -OutputView#printRate()
 - [x] 구입 금액 예외 처리 기능
