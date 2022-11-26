@@ -49,7 +49,14 @@ public class UserValidate {
             int bonusNumber = Integer.parseInt(bonusNum);
             return bonusNumber;
         } catch (NumberFormatException e) {
-            System.out.println("숫자만 입력해주세요");
+            System.out.println("숫자만 입력해주세요.");
+            throw new IllegalArgumentException();
+        }
+    }
+
+    public void bonusNumOverlapException(int bonusNum, List<Integer> winningNumber) {
+        if (winningNumber.contains(bonusNum)) {
+            System.out.println("당첨 번호와 중복되지 않는 숫자를 입력해주세요.");
             throw new IllegalArgumentException();
         }
     }
