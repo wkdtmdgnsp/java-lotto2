@@ -35,5 +35,12 @@ public class UserValidate {
         }
     }
 
-
+    public void winningRangeException(List<Integer> winningNumber) {
+        for (int i : winningNumber) {
+            if (winningNumber.get(i) > 46 && winningNumber.get(i) < 0) {
+                System.out.println("1이상 ~ 46이하의 숫자를 입력해주세요.");
+                throw new IllegalArgumentException();
+            }
+        }
+    }
 }

@@ -12,9 +12,9 @@
 - [x] 구입 금액 예외 처리 기능
   - [x] 숫자가 아닌 경우 예외 처리 기능 -UserValidate#buyNumberException()
   - [x] 1000원 단위가 아닌 경우 예외 처리 기능 -UserValidate#moneyRangeException()
-- [ ] 당첨 번호 예외 처리 기능 
+- [x] 당첨 번호 예외 처리 기능 
   - [x] 올바른 형식이 아닌 경우 예외 처리 기능 -UserValidate#winningNumberException()
-  - [ ] 숫자 범위 예외 처리 
+  - [x] 숫자 범위 예외 처리 기능
   - [ ] 보너스 번호 당첨 번호와 중복 예외 처리 기능
   - [ ] 보너스 번호 숫자가 아닌 경우 예외 처리 기능
 ## 기능 요구 사항
