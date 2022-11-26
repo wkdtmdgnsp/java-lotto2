@@ -43,4 +43,14 @@ public class UserValidate {
             }
         }
     }
+    
+    public int bonusNumberException(String bonusNum) {
+        try {
+            int bonusNumber = Integer.parseInt(bonusNum);
+            return bonusNumber;
+        } catch (NumberFormatException e) {
+            System.out.println("숫자만 입력해주세요");
+            throw new IllegalArgumentException();
+        }
+    }
 }

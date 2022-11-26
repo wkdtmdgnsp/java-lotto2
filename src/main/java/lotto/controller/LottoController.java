@@ -18,6 +18,7 @@ public class LottoController {
         buy();
         outputView.printLotto(userLotto);
         winningLotto = new Lotto(inputView.readWinningLotto());
+        int bonusNum = 0;
     }
 
     public void buy() {
