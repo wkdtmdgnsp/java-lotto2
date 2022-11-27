@@ -9,7 +9,7 @@
   - [x] 보너스 번호 입력 기능 -InputView#readBonusNum()
 - [ ] 당첨 계산 기능 -OutputView#printWinning()
   - [x] 보너스 번호가 일치하는지 확인하는 기능 -Lotto#bonusContain()
-  - [ ] 당첨 번호와 몇개가 일치하는지 확인하는 기능 -Lotto#matchCount()
+  - [x] 당첨 번호와 몇개가 일치하는지 확인하는 기능 -Lotto#matchCount()
 - [ ] 수익률 계산 기능 -OutputView#printRate()
 - [ ] 당첨 통계 출력 기능 -OutputView#printWinning()
   - [ ] 수익률 출력 기능 -OutputView#printRate()

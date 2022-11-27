@@ -33,4 +33,14 @@ public class Lotto {
         }
         return false;
     }
+
+    public int matchCount(Lotto lotto) {
+        int count = 0;
+        for (int i=0; i<numbers.size(); i++) {
+            if (lotto.numbers.contains(numbers.get(i))) {
+                count++;
+            }
+        }
+        return count;
+    }
 }
