@@ -26,4 +26,11 @@ public class Lotto {
         Collections.sort(sortNumbers);
         return sortNumbers.toString();
     }
+
+    public boolean bonusContain(int bonusNum) {
+        if (numbers.contains(bonusNum)) {
+            return true;
+        }
+        return false;
+    }
 }
