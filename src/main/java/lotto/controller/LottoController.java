@@ -1,7 +1,9 @@
 package lotto.controller;
 
 import lotto.model.Lotto;
+import lotto.model.Rank;
 import lotto.model.User;
+import lotto.model.WinningLotto;
 import lotto.view.InputView;
 import lotto.view.OutputView;
 
@@ -12,7 +14,7 @@ public class LottoController {
     private InputView inputView = new InputView();
     private OutputView outputView = new OutputView();
     private List<Lotto> userLotto = new ArrayList<>();
-    private Lotto winningLotto;
+    private WinningLotto winningLotto;
 
     public void run() {
         buy();
@@ -28,7 +30,8 @@ public class LottoController {
 
     public void winningInput() {
         List<Integer> winningNumber = inputView.readWinningLotto();
-        winningLotto = new Lotto(winningNumber);
+        Lotto winningNum = new Lotto(winningNumber);
         int bonusNum = inputView.readBonusNum(winningNumber);
+        winningLotto = new WinningLotto(winningNum, bonusNum);
     }
 }
