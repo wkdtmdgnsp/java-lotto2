@@ -1,9 +1,6 @@
 package lotto.controller;
 
-import lotto.model.Lotto;
-import lotto.model.Rank;
-import lotto.model.User;
-import lotto.model.WinningLotto;
+import lotto.model.*;
 import lotto.view.InputView;
 import lotto.view.OutputView;
 
@@ -13,6 +10,7 @@ import java.util.List;
 public class LottoController {
     private InputView inputView = new InputView();
     private OutputView outputView = new OutputView();
+    private Money money;
     private List<Lotto> userLotto = new ArrayList<>();
     private WinningLotto winningLotto;
 
@@ -23,9 +21,9 @@ public class LottoController {
     }
 
     public void buy() {
-        int money = inputView.readLottoBuy();
+        money = new Money(inputView.readLottoBuy());
         User user = new User();
-        userLotto = user.lottoBuy(money);
+        userLotto = user.lottoBuy(money.getMoney());
     }
 
     public void winningInput() {
