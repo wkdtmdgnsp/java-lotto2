@@ -38,5 +38,7 @@ public class LottoController {
     public void lottoPlay() {
         LottoGame lottoGame = new LottoGame();
         lottoResult = lottoGame.play(userLotto, winningLotto);
+        long totalMoney = lottoResult.calculateTotalPrize();
+        lottoResult.calculateProfitRate(totalMoney, money.getMoney());
     }
 }
