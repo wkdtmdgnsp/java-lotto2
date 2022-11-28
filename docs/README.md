@@ -7,7 +7,7 @@
 - [x] 구입한 로또 번호 출력 기능 -OutputView#printLotto()
 - [x] 당첨 번호 입력 기능 -InputView#readWinningLotto()
   - [x] 보너스 번호 입력 기능 -InputView#readBonusNum()
-- [ ] 당첨 계산 기능 -LottoResult#printWinning()
+- [x] 당첨 계산 기능 -LottoGame#play()
   - [x] 보너스 번호가 일치하는지 확인하는 기능 -Lotto#bonusContain()
   - [x] 당첨 번호와 몇개가 일치하는지 확인하는 기능 -Lotto#matchCount()
 - [ ] 수익률 계산 기능 -OutputView#printRate()

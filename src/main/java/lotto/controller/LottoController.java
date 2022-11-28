@@ -6,6 +6,7 @@ import lotto.view.OutputView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class LottoController {
     private InputView inputView = new InputView();
@@ -13,6 +14,7 @@ public class LottoController {
     private Money money;
     private List<Lotto> userLotto = new ArrayList<>();
     private WinningLotto winningLotto;
+    private LottoResult lottoResult;
 
     public void run() {
         buy();
@@ -31,5 +33,10 @@ public class LottoController {
         Lotto winningNum = new Lotto(winningNumber);
         int bonusNum = inputView.readBonusNum(winningNumber);
         winningLotto = new WinningLotto(winningNum, bonusNum);
+    }
+
+    public void lottoPlay() {
+        LottoGame lottoGame = new LottoGame();
+        lottoResult = lottoGame.play(userLotto, winningLotto);
     }
 }
