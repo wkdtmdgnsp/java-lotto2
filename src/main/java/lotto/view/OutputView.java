@@ -29,7 +29,7 @@ public class OutputView {
         System.out.println(Rank.WIN1.getMatchCount() +"개 일치 (" +Rank.WIN1.getWinningMoney() +"원) - " +rank.get(Rank.WIN1) +"개");
     }
 
-    public void printRate() {
-
+    public void printRate(double rate) {
+        System.out.println("총 수익률은 " +rate +"%입니다.");
     }
 }
