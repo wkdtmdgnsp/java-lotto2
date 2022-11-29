@@ -12,7 +12,7 @@ public class LottoResult {
     }
 
     public double calculateProfitRate(long sum, int money) {
-        double rate = (sum / money) *100;
+        double rate = ((double)sum / money) * 100;
         return Math.round(rate * 100) / 100.0;
     }
 
