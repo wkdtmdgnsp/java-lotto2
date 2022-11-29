@@ -10,8 +10,8 @@
 - [x] 당첨 계산 기능 -LottoGame#play()
   - [x] 보너스 번호가 일치하는지 확인하는 기능 -Lotto#bonusContain()
   - [x] 당첨 번호와 몇개가 일치하는지 확인하는 기능 -Lotto#matchCount()
-- [x] 수익률 계산 기능 -OutputView#printRate()
-- [ ] 당첨 통계 출력 기능 -OutputView#printWinning()
+- [x] 수익률 계산 기능 -LottoResult#calculateProfitRate()
+- [x] 당첨 통계 출력 기능 -OutputView#printWinning()
   - [ ] 수익률 출력 기능 -OutputView#printRate()
 - [x] 구입 금액 예외 처리 기능
   - [x] 숫자가 아닌 경우 예외 처리 기능 -UserValidate#buyNumberException()

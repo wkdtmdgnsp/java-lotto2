@@ -24,4 +24,8 @@ public class LottoResult {
         }
         return sum;
     }
+
+    public Map<Rank, Integer> getResult() {
+        return result;
+    }
 }

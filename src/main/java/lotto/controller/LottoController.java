@@ -20,6 +20,8 @@ public class LottoController {
         buy();
         outputView.printLotto(userLotto);
         winningInput();
+        lottoPlay();
+        printResult();
     }
 
     public void buy() {
@@ -40,5 +42,9 @@ public class LottoController {
         lottoResult = lottoGame.play(userLotto, winningLotto);
         long totalMoney = lottoResult.calculateTotalPrize();
         lottoResult.calculateProfitRate(totalMoney, money.getMoney());
+    }
+
+    public void printResult() {
+        outputView.printWinning(lottoResult);
     }
 }
